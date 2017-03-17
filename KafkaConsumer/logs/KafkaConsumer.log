@@ -1,0 +1,800 @@
+2017-03-10 11:57:38,695 org.springframework.web.context.ContextLoader (initWebApplicationContext:305) - Root WebApplicationContext: initialization started
+2017-03-10 11:57:38,829 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing Root WebApplicationContext: startup date [Fri Mar 10 11:57:38 CST 2017]; root of context hierarchy
+2017-03-10 11:57:38,887 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\Application-kafka-consumer.xml]
+2017-03-10 11:57:39,151 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\dispatcher-servlet.xml]
+2017-03-10 11:57:40,046 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vehiclegroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-10 11:57:40,056 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vehiclegroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-10 11:57:40,165 org.apache.kafka.common.utils.AppInfoParser (<init>:83) - Kafka version : 0.10.1.0
+2017-03-10 11:57:40,166 org.apache.kafka.common.utils.AppInfoParser (<init>:84) - Kafka commitId : 3402a74efb23d1d4
+2017-03-10 11:57:40,451 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:555) - Discovered coordinator dellserver41.yw.cn:9092 (id: 2147483647 rack: null) for group vehiclegroup.
+2017-03-10 11:57:40,456 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinPrepare:333) - Revoking previously assigned partitions [] for group vehiclegroup
+2017-03-10 11:57:40,457 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsRevoked:242) - partitions revoked:[]
+2017-03-10 11:57:40,457 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (sendJoinGroupRequest:381) - (Re-)joining group vehiclegroup
+2017-03-10 11:57:40,482 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:349) - Successfully joined group vehiclegroup with generation 11
+2017-03-10 11:57:40,484 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinComplete:225) - Setting newly assigned partitions [ahao-test-0, ahao-test-1] for group vehiclegroup
+2017-03-10 11:57:40,501 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsAssigned:247) - partitions assigned:[ahao-test-0, ahao-test-1]
+2017-03-10 11:57:40,762 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Mar 10 11:57:38 CST 2017]; root of context hierarchy
+2017-03-10 11:57:41,085 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Mar 10 11:57:38 CST 2017]; root of context hierarchy
+2017-03-10 11:57:41,293 org.springframework.context.support.DefaultLifecycleProcessor (start:341) - Starting beans in phase 0
+2017-03-10 11:57:41,320 org.springframework.web.context.ContextLoader (initWebApplicationContext:345) - Root WebApplicationContext: initialization completed in 2622 ms
+2017-03-10 11:57:41,427 org.springframework.web.servlet.DispatcherServlet (initServletBean:489) - FrameworkServlet 'dispatcher': initialization started
+2017-03-10 11:57:41,432 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 10 11:57:41 CST 2017]; parent: Root WebApplicationContext
+2017-03-10 11:57:41,433 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from class path resource [ApplicationContext/dispatcher-servlet.xml]
+2017-03-10 11:57:41,598 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 10 11:57:41 CST 2017]; parent: Root WebApplicationContext
+2017-03-10 11:57:41,732 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 10 11:57:41 CST 2017]; parent: Root WebApplicationContext
+2017-03-10 11:57:41,923 org.springframework.web.servlet.DispatcherServlet (initServletBean:508) - FrameworkServlet 'dispatcher': initialization completed in 495 ms
+2017-03-10 11:57:56,526 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:23) - --****Kafka got message is : {"AlarmDescription":"","AlarmName":"可疑类","AlarmPicUrl":"http://10.0.10.92:8100/scityfankong/ftp/20161124172859_18169665673.mp4","AlarmStatus":"","AlarmTime":"2017-3-8 11:26:55","AlarmUserDesc":"","AlarmUserId":"18074845663","AlarmUserName":"一键报警","AlarmUserPosition":"广西壮族自治区桂林市七星区朝阳路","AlarmVideoUrl":"http://10.0.10.92:8100/scityfankong/ftp/20161124172859_18169665673.mp4","DeviceID":"YJBJ18074845663","Lagitude":"25.273136","Longitude":"110.34318","Message_Type":"一键报警","Sequence_Number":"","Session_ID":"","devType":"1"}
+2017-03-10 11:58:46,435 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:23) - --****Kafka got message is : {"AlarmDescription":"","AlarmName":"可疑类","AlarmPicUrl":"http://10.0.10.92:8100/scityfankong/ftp/20161124172859_18169665673.mp4","AlarmStatus":"","AlarmTime":"2017-3-8 11:26:55","AlarmUserDesc":"","AlarmUserId":"18074845663","AlarmUserName":"一键报警","AlarmUserPosition":"广西壮族自治区桂林市七星区朝阳路","AlarmVideoUrl":"http://10.0.10.92:8100/scityfankong/ftp/20161124172859_18169665673.mp4","DeviceID":"YJBJ18074845663","Lagitude":"25.273136","Longitude":"110.34318","Message_Type":"一键报警","Sequence_Number":"","Session_ID":"","devType":"1"}
+2017-03-10 14:55:09,417 org.springframework.web.context.ContextLoader (initWebApplicationContext:305) - Root WebApplicationContext: initialization started
+2017-03-10 14:55:09,519 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing Root WebApplicationContext: startup date [Fri Mar 10 14:55:09 CST 2017]; root of context hierarchy
+2017-03-10 14:55:09,569 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\Application-kafka-consumer.xml]
+2017-03-10 14:55:09,658 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\dispatcher-servlet.xml]
+2017-03-10 14:55:10,187 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vehiclegroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-10 14:55:10,197 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vehiclegroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-10 14:55:10,272 org.apache.kafka.common.utils.AppInfoParser (<init>:83) - Kafka version : 0.10.1.0
+2017-03-10 14:55:10,272 org.apache.kafka.common.utils.AppInfoParser (<init>:84) - Kafka commitId : 3402a74efb23d1d4
+2017-03-10 14:55:10,484 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:555) - Discovered coordinator dellserver41.yw.cn:9092 (id: 2147483647 rack: null) for group vehiclegroup.
+2017-03-10 14:55:10,487 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinPrepare:333) - Revoking previously assigned partitions [] for group vehiclegroup
+2017-03-10 14:55:10,488 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsRevoked:242) - partitions revoked:[]
+2017-03-10 14:55:10,489 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (sendJoinGroupRequest:381) - (Re-)joining group vehiclegroup
+2017-03-10 14:55:10,538 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:349) - Successfully joined group vehiclegroup with generation 19
+2017-03-10 14:55:10,540 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinComplete:225) - Setting newly assigned partitions [ahao-test-0, ahao-test-1] for group vehiclegroup
+2017-03-10 14:55:10,560 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsAssigned:247) - partitions assigned:[ahao-test-0, ahao-test-1]
+2017-03-10 14:55:10,732 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Mar 10 14:55:09 CST 2017]; root of context hierarchy
+2017-03-10 14:55:10,998 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Mar 10 14:55:09 CST 2017]; root of context hierarchy
+2017-03-10 14:55:11,184 org.springframework.context.support.DefaultLifecycleProcessor (start:341) - Starting beans in phase 0
+2017-03-10 14:55:11,189 org.springframework.web.context.ContextLoader (initWebApplicationContext:345) - Root WebApplicationContext: initialization completed in 1769 ms
+2017-03-10 14:55:11,264 org.springframework.web.servlet.DispatcherServlet (initServletBean:489) - FrameworkServlet 'dispatcher': initialization started
+2017-03-10 14:55:11,270 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 10 14:55:11 CST 2017]; parent: Root WebApplicationContext
+2017-03-10 14:55:11,271 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from class path resource [ApplicationContext/dispatcher-servlet.xml]
+2017-03-10 14:55:11,433 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 10 14:55:11 CST 2017]; parent: Root WebApplicationContext
+2017-03-10 14:55:11,565 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 10 14:55:11 CST 2017]; parent: Root WebApplicationContext
+2017-03-10 14:55:11,749 org.springframework.web.servlet.DispatcherServlet (initServletBean:508) - FrameworkServlet 'dispatcher': initialization completed in 484 ms
+2017-03-10 15:07:05,353 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:23) - --****Kafka got message is : {"AlarmDescription":"","AlarmName":"可疑类","AlarmPicUrl":"http://10.0.10.92:8100/scityfankong/ftp/20161124172859_18169665673.mp4","AlarmStatus":"","AlarmTime":"2017-3-10 15:04:34","AlarmUserDesc":"","AlarmUserId":"18074845663","AlarmUserName":"一键报警","AlarmUserPosition":"广西壮族自治区桂林市七星区朝阳路","AlarmVideoUrl":"http://10.0.10.92:8100/scityfankong/ftp/20161124172859_18169665673.mp4","DeviceID":"YJBJ18074845663","Lagitude":"25.273136","Longitude":"110.34318","Message_Type":"一键报警","Sequence_Number":"","Session_ID":"","devType":"1"}
+2017-03-16 20:01:48,744 org.springframework.web.context.ContextLoader (initWebApplicationContext:305) - Root WebApplicationContext: initialization started
+2017-03-16 20:01:49,158 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing Root WebApplicationContext: startup date [Thu Mar 16 20:01:49 CST 2017]; root of context hierarchy
+2017-03-16 20:01:49,261 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\Application-kafka-consumer.xml]
+2017-03-16 20:01:49,646 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\dispatcher-servlet.xml]
+2017-03-16 20:01:50,745 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vehiclegroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-16 20:01:50,757 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vehiclegroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-16 20:01:50,926 org.apache.kafka.common.utils.AppInfoParser (<init>:83) - Kafka version : 0.10.1.0
+2017-03-16 20:01:50,927 org.apache.kafka.common.utils.AppInfoParser (<init>:84) - Kafka commitId : 3402a74efb23d1d4
+2017-03-16 20:01:51,237 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:555) - Discovered coordinator dellserver41.yw.cn:9092 (id: 2147483647 rack: null) for group vehiclegroup.
+2017-03-16 20:01:51,264 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinPrepare:333) - Revoking previously assigned partitions [] for group vehiclegroup
+2017-03-16 20:01:51,264 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsRevoked:242) - partitions revoked:[]
+2017-03-16 20:01:51,265 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (sendJoinGroupRequest:381) - (Re-)joining group vehiclegroup
+2017-03-16 20:01:51,323 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:349) - Successfully joined group vehiclegroup with generation 1
+2017-03-16 20:01:51,328 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinComplete:225) - Setting newly assigned partitions [ahao-test-0, ahao-test-1] for group vehiclegroup
+2017-03-16 20:01:51,383 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsAssigned:247) - partitions assigned:[ahao-test-0, ahao-test-1]
+2017-03-16 20:01:51,699 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Thu Mar 16 20:01:49 CST 2017]; root of context hierarchy
+2017-03-16 20:01:52,001 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Thu Mar 16 20:01:49 CST 2017]; root of context hierarchy
+2017-03-16 20:01:52,212 org.springframework.context.support.DefaultLifecycleProcessor (start:341) - Starting beans in phase 0
+2017-03-16 20:01:52,253 org.springframework.web.context.ContextLoader (initWebApplicationContext:345) - Root WebApplicationContext: initialization completed in 3490 ms
+2017-03-16 20:01:52,421 org.springframework.web.servlet.DispatcherServlet (initServletBean:489) - FrameworkServlet 'dispatcher': initialization started
+2017-03-16 20:01:52,425 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Mar 16 20:01:52 CST 2017]; parent: Root WebApplicationContext
+2017-03-16 20:01:52,426 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from class path resource [ApplicationContext/dispatcher-servlet.xml]
+2017-03-16 20:01:52,597 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Mar 16 20:01:52 CST 2017]; parent: Root WebApplicationContext
+2017-03-16 20:01:52,736 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Mar 16 20:01:52 CST 2017]; parent: Root WebApplicationContext
+2017-03-16 20:01:52,921 org.springframework.web.servlet.DispatcherServlet (initServletBean:508) - FrameworkServlet 'dispatcher': initialization completed in 500 ms
+2017-03-16 20:04:10,835 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:23) - --****Kafka got message is : {"age":"19","name":"ahao","sex":"male"}
+2017-03-16 21:38:46,355 org.springframework.web.context.ContextLoader (initWebApplicationContext:305) - Root WebApplicationContext: initialization started
+2017-03-16 21:38:46,460 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing Root WebApplicationContext: startup date [Thu Mar 16 21:38:46 CST 2017]; root of context hierarchy
+2017-03-16 21:38:46,510 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\Application-kafka-consumer.xml]
+2017-03-16 21:38:46,602 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\dispatcher-servlet.xml]
+2017-03-16 21:38:47,112 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vehiclegroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-16 21:38:47,121 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = vehiclegroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-16 21:38:47,199 org.apache.kafka.common.utils.AppInfoParser (<init>:83) - Kafka version : 0.10.1.0
+2017-03-16 21:38:47,199 org.apache.kafka.common.utils.AppInfoParser (<init>:84) - Kafka commitId : 3402a74efb23d1d4
+2017-03-16 21:38:47,380 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:555) - Discovered coordinator dellserver41.yw.cn:9092 (id: 2147483647 rack: null) for group vehiclegroup.
+2017-03-16 21:38:47,385 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinPrepare:333) - Revoking previously assigned partitions [] for group vehiclegroup
+2017-03-16 21:38:47,387 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsRevoked:242) - partitions revoked:[]
+2017-03-16 21:38:47,388 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (sendJoinGroupRequest:381) - (Re-)joining group vehiclegroup
+2017-03-16 21:38:47,403 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:349) - Successfully joined group vehiclegroup with generation 3
+2017-03-16 21:38:47,405 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinComplete:225) - Setting newly assigned partitions [ahao-test-0, ahao-test-1] for group vehiclegroup
+2017-03-16 21:38:47,417 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsAssigned:247) - partitions assigned:[ahao-test-0, ahao-test-1]
+2017-03-16 21:38:47,598 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Thu Mar 16 21:38:46 CST 2017]; root of context hierarchy
+2017-03-16 21:38:47,866 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Thu Mar 16 21:38:46 CST 2017]; root of context hierarchy
+2017-03-16 21:38:48,056 org.springframework.context.support.DefaultLifecycleProcessor (start:341) - Starting beans in phase 0
+2017-03-16 21:38:48,063 org.springframework.web.context.ContextLoader (initWebApplicationContext:345) - Root WebApplicationContext: initialization completed in 1705 ms
+2017-03-16 21:38:48,142 org.springframework.web.servlet.DispatcherServlet (initServletBean:489) - FrameworkServlet 'dispatcher': initialization started
+2017-03-16 21:38:48,146 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Mar 16 21:38:48 CST 2017]; parent: Root WebApplicationContext
+2017-03-16 21:38:48,147 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from class path resource [ApplicationContext/dispatcher-servlet.xml]
+2017-03-16 21:38:48,318 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Mar 16 21:38:48 CST 2017]; parent: Root WebApplicationContext
+2017-03-16 21:38:48,453 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Thu Mar 16 21:38:48 CST 2017]; parent: Root WebApplicationContext
+2017-03-16 21:38:48,635 org.springframework.web.servlet.DispatcherServlet (initServletBean:508) - FrameworkServlet 'dispatcher': initialization completed in 493 ms
+2017-03-16 21:42:19,962 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:23) - --****Kafka got message is : {"age":"19","name":"ahao","sex":"male"}
+2017-03-16 21:42:39,867 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:23) - --****Kafka got message is : {"age":"18","name":"ahao-1","sex":"famale"}
+2017-03-17 09:44:36,635 org.springframework.web.context.ContextLoader (initWebApplicationContext:305) - Root WebApplicationContext: initialization started
+2017-03-17 09:44:36,743 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing Root WebApplicationContext: startup date [Fri Mar 17 09:44:36 CST 2017]; root of context hierarchy
+2017-03-17 09:44:36,792 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\dispatcher-servlet.xml]
+2017-03-17 09:44:37,041 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\Kafka-consumer.xml]
+2017-03-17 09:44:37,217 org.springframework.beans.factory.config.PropertyPlaceholderConfigurer (loadProperties:172) - Loading properties file from class path resource [properties/config.properties]
+2017-03-17 09:44:37,218 org.springframework.beans.factory.config.PropertyPlaceholderConfigurer (loadProperties:172) - Loading properties file from class path resource [properties/kafka.properties]
+2017-03-17 09:44:37,624 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Mar 17 09:44:36 CST 2017]; root of context hierarchy
+2017-03-17 09:44:37,874 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Mar 17 09:44:36 CST 2017]; root of context hierarchy
+2017-03-17 09:44:38,104 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testGroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-17 09:44:38,118 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testGroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-17 09:44:38,199 org.apache.kafka.common.utils.AppInfoParser (<init>:83) - Kafka version : 0.10.1.0
+2017-03-17 09:44:38,199 org.apache.kafka.common.utils.AppInfoParser (<init>:84) - Kafka commitId : 3402a74efb23d1d4
+2017-03-17 09:44:38,275 org.springframework.context.support.DefaultLifecycleProcessor (start:341) - Starting beans in phase 0
+2017-03-17 09:44:38,280 org.springframework.web.context.ContextLoader (initWebApplicationContext:345) - Root WebApplicationContext: initialization completed in 1642 ms
+2017-03-17 09:44:38,367 org.springframework.web.servlet.DispatcherServlet (initServletBean:489) - FrameworkServlet 'dispatcher': initialization started
+2017-03-17 09:44:38,374 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 17 09:44:38 CST 2017]; parent: Root WebApplicationContext
+2017-03-17 09:44:38,376 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from class path resource [ApplicationContext/dispatcher-servlet.xml]
+2017-03-17 09:44:38,381 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:555) - Discovered coordinator dellserver41.yw.cn:9092 (id: 2147483647 rack: null) for group testGroup.
+2017-03-17 09:44:38,386 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinPrepare:333) - Revoking previously assigned partitions [] for group testGroup
+2017-03-17 09:44:38,386 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsRevoked:242) - partitions revoked:[]
+2017-03-17 09:44:38,386 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (sendJoinGroupRequest:381) - (Re-)joining group testGroup
+2017-03-17 09:44:38,440 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:349) - Successfully joined group testGroup with generation 1
+2017-03-17 09:44:38,441 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinComplete:225) - Setting newly assigned partitions [ahao-test-0, ahao-test-1] for group testGroup
+2017-03-17 09:44:38,467 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsAssigned:247) - partitions assigned:[ahao-test-0, ahao-test-1]
+2017-03-17 09:44:38,557 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 17 09:44:38 CST 2017]; parent: Root WebApplicationContext
+2017-03-17 09:44:38,693 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 17 09:44:38 CST 2017]; parent: Root WebApplicationContext
+2017-03-17 09:44:38,904 org.springframework.web.servlet.DispatcherServlet (initServletBean:508) - FrameworkServlet 'dispatcher': initialization completed in 536 ms
+2017-03-17 09:45:21,780 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:22) - --****Kafka got message is : {"age":"18","name":"ahao-1","sex":"famale"}
+2017-03-17 09:45:38,957 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:22) - --****Kafka got message is : {"age":"19","name":"ahao","sex":"male"}
+2017-03-17 09:52:34,962 org.springframework.web.context.ContextLoader (initWebApplicationContext:305) - Root WebApplicationContext: initialization started
+2017-03-17 09:52:35,065 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing Root WebApplicationContext: startup date [Fri Mar 17 09:52:35 CST 2017]; root of context hierarchy
+2017-03-17 09:52:35,114 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\dispatcher-servlet.xml]
+2017-03-17 09:52:35,344 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from file [D:\myworkspace\KafkaConsumer\target\classes\ApplicationContext\Kafka-consumer.xml]
+2017-03-17 09:52:35,519 org.springframework.beans.factory.config.PropertyPlaceholderConfigurer (loadProperties:172) - Loading properties file from class path resource [properties/config.properties]
+2017-03-17 09:52:35,520 org.springframework.beans.factory.config.PropertyPlaceholderConfigurer (loadProperties:172) - Loading properties file from class path resource [properties/kafka.properties]
+2017-03-17 09:52:35,969 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Mar 17 09:52:35 CST 2017]; root of context hierarchy
+2017-03-17 09:52:36,230 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Mar 17 09:52:35 CST 2017]; root of context hierarchy
+2017-03-17 09:52:36,437 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testGroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-17 09:52:36,447 org.apache.kafka.clients.consumer.ConsumerConfig (logAll:180) - ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [10.0.88.30:9092, 10.0.88.41:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testGroup
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 15000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-03-17 09:52:36,522 org.apache.kafka.common.utils.AppInfoParser (<init>:83) - Kafka version : 0.10.1.0
+2017-03-17 09:52:36,522 org.apache.kafka.common.utils.AppInfoParser (<init>:84) - Kafka commitId : 3402a74efb23d1d4
+2017-03-17 09:52:36,594 org.springframework.context.support.DefaultLifecycleProcessor (start:341) - Starting beans in phase 0
+2017-03-17 09:52:36,598 org.springframework.web.context.ContextLoader (initWebApplicationContext:345) - Root WebApplicationContext: initialization completed in 1633 ms
+2017-03-17 09:52:36,667 org.springframework.web.servlet.DispatcherServlet (initServletBean:489) - FrameworkServlet 'dispatcher': initialization started
+2017-03-17 09:52:36,682 org.springframework.web.context.support.XmlWebApplicationContext (prepareRefresh:581) - Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 17 09:52:36 CST 2017]; parent: Root WebApplicationContext
+2017-03-17 09:52:36,684 org.springframework.beans.factory.xml.XmlBeanDefinitionReader (loadBeanDefinitions:317) - Loading XML bean definitions from class path resource [ApplicationContext/dispatcher-servlet.xml]
+2017-03-17 09:52:36,693 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:555) - Discovered coordinator dellserver41.yw.cn:9092 (id: 2147483647 rack: null) for group testGroup.
+2017-03-17 09:52:36,697 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinPrepare:333) - Revoking previously assigned partitions [] for group testGroup
+2017-03-17 09:52:36,697 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsRevoked:242) - partitions revoked:[]
+2017-03-17 09:52:36,697 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (sendJoinGroupRequest:381) - (Re-)joining group testGroup
+2017-03-17 09:52:36,711 org.apache.kafka.clients.consumer.internals.AbstractCoordinator (onSuccess:349) - Successfully joined group testGroup with generation 3
+2017-03-17 09:52:36,713 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator (onJoinComplete:225) - Setting newly assigned partitions [ahao-test-0, ahao-test-1] for group testGroup
+2017-03-17 09:52:36,724 org.springframework.kafka.listener.KafkaMessageListenerContainer (onPartitionsAssigned:247) - partitions assigned:[ahao-test-0, ahao-test-1]
+2017-03-17 09:52:36,849 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 17 09:52:36 CST 2017]; parent: Root WebApplicationContext
+2017-03-17 09:52:36,982 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter (initControllerAdviceCache:534) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcher-servlet': startup date [Fri Mar 17 09:52:36 CST 2017]; parent: Root WebApplicationContext
+2017-03-17 09:52:37,164 org.springframework.web.servlet.DispatcherServlet (initServletBean:508) - FrameworkServlet 'dispatcher': initialization completed in 497 ms
+2017-03-17 09:53:14,344 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:22) - --****Kafka got message is : {"age":"19","name":"ahao","sex":"male"}
+2017-03-17 09:53:30,822 com.ahao.kafka.listener.KafkaConsumerServer (onMessage:22) - --****Kafka got message is : {"age":"18","name":"ahao-1","sex":"famale"}
