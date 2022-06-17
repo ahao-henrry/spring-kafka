@@ -38,7 +38,7 @@
 	    <dependency>
 	        <groupId>com.alibaba</groupId>
 	        <artifactId>fastjson</artifactId>
-	        <version>1.2.31</version>
+	        <version>1.2.83</version>
 	    </dependency>
 	    
 	    <!-- Kafka和spring集成的支持类库，spring和kafka通信监听 -->
